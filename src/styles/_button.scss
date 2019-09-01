@@ -1,0 +1,152 @@
+@import "overrides";
+
+.button--grey {
+  color: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  background-color:#D2D2D2;
+  height: auto;
+}
+
+.button--white {
+  color: #888888;
+  border: 1px solid #FFFFFF;
+  background-color:#FFFFFF;
+  height: auto;
+}
+
+.button--shallow-grey {
+  color: #000000;
+  border: 1px solid #F8F8F8;
+  background-color:#F8F8F8;
+  height: auto;
+}
+
+.button--edit {
+  color: #707070;
+  border: 1px solid #707070;
+  background-color:#FFFFFF;
+  border-radius: 23px * $hd;
+}
+
+.button--circle-small {
+  border-radius: 8px *$hd;
+}
+
+.button--base {
+  height: 80rpx;
+  // font-size:34rpx;
+  line-height:80rpx;
+}
+
+.button--pink {
+  color: #FFFFFF;
+  border: 1px solid #FF7575;
+  background-color:#FF7575;
+}
+
+// 周月 按钮
+.button-chart {
+  height: 25px * $hd;
+  border-radius: 23px * $hd;
+  line-height: 25px * $hd;
+
+  color: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  background-color:#D2D2D2;
+
+  &--active {
+    color:#FFF;
+    height: 25px * $hd;
+    line-height: 25px * $hd;
+    border:1PX solid $color-brand;
+    background:$color-brand;
+    border-radius: 23px * $hd;
+  }
+}
+
+// 浏览量 和 预约量 按钮
+.button-unselect text {
+  color: $color-text-secondary;
+}
+.button-unselect icon{
+  width: 14px * $hd;
+  height: 14px * $hd;
+  border: 1px solid $color-text-secondary;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 4px;
+  color: $color-text-secondary;
+}
+.button-selected text {
+  color: $color-brand ;
+}
+.button-selected icon{
+  position: relative;
+  width: 14px * $hd;
+  height: 14px * $hd;
+  border: 1px solid $color-brand;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 4px;
+  color: $color-brand;
+}
+.button-selected icon::after{
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 8px*$hd;
+  height: 8px*$hd;
+  border-radius: 50%;
+  background: $color-brand;
+}
+
+// 蓝色小圆点
+.button--dot {
+  height: 6px * $hd;
+  width: 6px * $hd;
+  background: $color-brand;
+  border-radius: 50%;
+}
+
+// 蓝色大按钮
+.button--login, .button--scan, .button--add{
+  height: 60px * $hd;
+  width: 60px * $hd;
+  background: $color-brand;
+  border-radius: 50%;
+
+  &-white {
+    background: #FFFFFF;
+  }
+
+  &-grey {
+    background: #B2B2B2;
+  }
+
+  &-small {
+    height: 28px * $hd;
+    width: 28px * $hd;
+
+  }
+}
+
+.button--scan {
+  height: 80px * $hd;
+  width: 80px * $hd;
+  position: fixed;
+  right: 25px * $hd;
+  bottom: 25px * $hd;
+  background:linear-gradient(135deg,rgba(61,109,255,1) 0%,rgba(0,62,249,1) 100%);
+  box-shadow:0px 3px 6px rgba(1,49,196,0.51);
+}
+.button--add {
+  height: 65px * $hd;
+  width: 65px * $hd;
+  position: fixed;
+  right: 18px * $hd;
+  bottom: 60px * $hd;
+  background:linear-gradient(135deg,rgba(61,109,255,1) 0%,rgba(0,62,249,1) 100%);
+  box-shadow:0px 4px 8px rgba(1,49,196,0.51);
+}
